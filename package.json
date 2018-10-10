@@ -1,0 +1,26 @@
+{
+  "name": "emailservice",
+  "version": "1.0.0",
+  "description": "A Full Stack Email Service Application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devInProgress/EmailService.git"
+  },
+  "keywords": [],
+  "author": "Naved Ahmad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devInProgress/EmailService/issues"
+  },
+  "homepage": "https://github.com/devInProgress/EmailService#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "nodemailer": "^4.6.8"
+  }
+}
