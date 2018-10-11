@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const path = require('path');
 
-const useMiddlewares = (app) => {
+const defineMiddlewares = (app) => {
   app.engine('handlebars', exphbs());
   app.set('view engine', 'handlebars');
   app.use(bodyParser.urlencoded({ extended: false }));
@@ -15,4 +15,4 @@ const useMiddlewares = (app) => {
   app.use('/', require('./api/view'));
 }
 
-module.exports = useMiddlewares;
+module.exports = defineMiddlewares;
