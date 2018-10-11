@@ -12,7 +12,7 @@ const useMiddlewares = (app) => {
   app.use(bodyParser.json());
   app.use('/public', express.static(path.join(__dirname, 'public')));
   app.use('api/email', require('./api/email'));
-  app.use('api/view', require('./api/view'));
+  app.use('/', require('./api/view'));
 }
 
 module.exports = useMiddlewares;
